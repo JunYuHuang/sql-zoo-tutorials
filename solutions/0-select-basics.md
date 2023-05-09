@@ -19,7 +19,7 @@ Checking a list The word IN allows us to check if an item is in a list. The exam
 
 ```SQL
 SELECT name, population FROM world
-  WHERE name IN ('Sweden', 'Norway', 'Denmark');
+WHERE name IN ('Sweden', 'Norway', 'Denmark');
 ```
 
 ## 3. Just the right size
@@ -30,5 +30,5 @@ Which countries are not too small and not too big? `BETWEEN` allows range checki
 
 ```SQL
 SELECT name, area FROM world
-  WHERE area BETWEEN 200000 AND 250000
+WHERE area BETWEEN 200000 AND 250000
 ```
