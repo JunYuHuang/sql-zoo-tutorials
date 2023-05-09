@@ -1,4 +1,4 @@
-# 0 SELECT basics - Solution
+# 0 SELECT basics
 
 ## 1. Introducing the `world` table of countries
 
