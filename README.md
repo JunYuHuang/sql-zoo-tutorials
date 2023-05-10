@@ -25,7 +25,7 @@ My solutions for the tutorials 0 (SELECT basics) thru 9 (Self join) and their qu
 1. [3 SELECT from Nobel](quizzes/3-select-from-nobel.md)
 1. [4 SELECT within SELECT](quizzes/4-select-within-select.md)
 1. [5 SUM and COUNT](quizzes/5-sum-and-count.md)
-<!-- 1. [6 JOIN](quizzes/6-join.md) -->
+1. [6 JOIN](quizzes/6-join.md)
 <!-- 1. [7 More JOIN operations](quizzes/7-more-join-operations.md) -->
 <!-- 1. [8 Using Null](quizzes/8-using-null.md) -->
 <!-- 1. [9 Self join](quizzes/9-self-join.md) -->
