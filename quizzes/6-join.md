@@ -15,6 +15,7 @@ matchid, teamid, player, gtime, id, teamname, coach
 ### 3.
 
 ```SQL
+-- option 1
 SELECT player, teamid, COUNT(*)
 FROM game JOIN goal ON matchid = id
 WHERE (team1 = "GRE" OR team2 = "GRE")
