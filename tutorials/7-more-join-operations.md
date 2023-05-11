@@ -109,17 +109,20 @@ GROUP BY yr
 HAVING COUNT(title) > 2;
 ```
 
-<!-- TODO - stuck on 12. -->
-
 ### 12.
 
 ```SQL
--- failing query
-SELECT title, name
+SELECT movie.title, actor.name
 FROM movie
 JOIN casting ON movie.id = casting.movieid
 JOIN actor ON casting.actorid = actor.id
-WHERE name = 'Julie Andrews'
+WHERE ord = 1
+AND movie.id IN
+(SELECT movie.id
+ FROM movie
+ JOIN casting ON movie.id = casting.movieid
+ JOIN actor ON casting.actorid = actor.id
+ WHERE name = 'Julie Andrews');
 ```
 
 ### 13.
@@ -146,19 +149,18 @@ ORDER BY
 COUNT(actorid) DESC,
 title ASC;
 ```
-
-<!-- TODO - stuck on 15. -->
-
 ### 15.
 
 ```SQL
--- failing query
-SELECT name
-FROM actor
+SELECT DISTINCT name FROM actor
 JOIN casting ON actor.id = casting.actorid
 JOIN movie ON casting.movieid = movie.id
-WHERE actorid =
-(SELECT id
- FROM actor
- WHERE name = 'Art Garfunkel')
+WHERE name != 'Art Garfunkel'
+AND movie.id IN
+(SELECT movie.id FROM actor
+ JOIN casting ON actor.id = casting.actorid
+ JOIN movie ON casting.movieid = movie.id
+ WHERE actorid =
+ (SELECT id FROM actor
+  WHERE name = 'Art Garfunkel'));
 ```
