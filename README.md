@@ -11,7 +11,7 @@ My solutions for the tutorials 0 (SELECT basics) thru 9 (Self join) and their qu
 * [4 SELECT within SELECT](tutorials/4-select-within-select.md)
 * [5 SUM and COUNT](tutorials/5-sum-and-count.md)
 * [6 JOIN](tutorials/6-join.md)
-<!-- * [7 More JOIN operations](tutorials/7-more-join-operations.md) -->
+* [7 More JOIN operations](tutorials/7-more-join-operations.md)
 * [8 Using Null](tutorials/8-using-null.md)
 <!-- * [8+ Numeric Examples](tutorials/8-plus-numeric-examples.md) -->
 <!-- * [9- Window function](tutorials/9-minus-window-function.md) -->
