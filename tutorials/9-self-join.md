@@ -104,21 +104,34 @@ WHERE stop_a.name = 'Craiglockhart'
 AND route_a.company = 'LRT'
 ```
 
-<!-- stuck on 10. -->
-
 ### 10.
 
 ```SQL
--- failing query
-SELECT route_a.num, route_a.company, stop_c.name, route_b.num, route_b.company
+-- returns right rows but order is off
+-- modified based on codyloyd's solution
+-- https://github.com/codyloyd/sqlzoo-solutions/blob/master/SQLZOO_solutions.md#self-join
+SELECT
+route_a.num, route_a.company,
+stop_b.name,
+route_c.num, route_c.company
 FROM route route_a
 JOIN route route_b
 ON
 (route_a.company = route_b.company AND
  route_a.num = route_b.num)
+JOIN
+(route route_c JOIN route route_d ON
+ (route_c.company = route_d.company AND
+  route_c.num = route_d.num))
 JOIN stops stop_a ON (route_a.stop = stop_a.id)
 JOIN stops stop_b ON (route_b.stop = stop_b.id)
-JOIN stops stop_c ON (stop_a.id = stop_b.id)
+JOIN stops stop_c ON (route_c.stop = stop_c.id)
+JOIN stops stop_d ON (route_d.stop = stop_d.id)
 WHERE stop_a.name = 'Craiglockhart'
-AND stop_b.name = 'Lochend'
+AND stop_d.name = 'Lochend'
+AND stop_b.name = stop_c.name
+-- ORDER BY
+-- LENGTH(route_a.num), route_b.num,
+-- stop_b.name,
+-- LENGTH(route_c.num), route_d.num;
 ```
