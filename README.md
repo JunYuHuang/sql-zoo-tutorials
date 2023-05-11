@@ -28,4 +28,4 @@ My solutions for the tutorials 0 (SELECT basics) thru 9 (Self join) and their qu
 * [6 JOIN](quizzes/6-join.md)
 * [7 More JOIN operations](quizzes/7-more-join-operations.md)
 * [8 Using Null](quizzes/8-using-null.md)
-<!-- * [9 Self join](quizzes/9-self-join.md) -->
+* [9 Self join](quizzes/9-self-join.md)
