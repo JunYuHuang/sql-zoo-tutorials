@@ -109,6 +109,7 @@ AND route_a.company = 'LRT'
 ### 10.
 
 ```SQL
+-- failing query
 SELECT route_a.num, route_a.company, stop_c.name, route_b.num, route_b.company
 FROM route route_a
 JOIN route route_b

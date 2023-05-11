@@ -114,6 +114,7 @@ HAVING COUNT(title) > 2;
 ### 12.
 
 ```SQL
+-- failing query
 SELECT title, name
 FROM movie
 JOIN casting ON movie.id = casting.movieid
@@ -151,6 +152,7 @@ title ASC;
 ### 15.
 
 ```SQL
+-- failing query
 SELECT name
 FROM actor
 JOIN casting ON actor.id = casting.actorid

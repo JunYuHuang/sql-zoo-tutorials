@@ -191,6 +191,7 @@ Notice in the query given every goal is listed. If it was a team1 goal then a 1 
 <!-- TODO - stuck on 13. -->
 
 ```SQL
+-- failing query
 SELECT
 mdate,
 team1,
