@@ -16,7 +16,7 @@ My solutions for the tutorials 0 (SELECT basics) thru 9 (Self join) and their qu
 <!-- * [8+ Numeric Examples](tutorials/8-plus-numeric-examples.md) -->
 <!-- * [9- Window function](tutorials/9-minus-window-function.md) -->
 <!-- * [9+ COVID 19](tutorials/9-plus-covid-19.md) -->
-<!-- * [9 Self join](tutorials/9-self-join.md) -->
+* [9 Self join](tutorials/9-self-join.md)
 
 ## Quizzes
 
